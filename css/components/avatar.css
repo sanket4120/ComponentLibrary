@@ -1,0 +1,55 @@
+.avatar,
+.avatar-sm,
+.avatar-md,
+.avatar-lg {
+  background-color: var(--light);
+}
+
+.avatar img,
+.avatar-sm img,
+.avatar-md img,
+.avatar-lg img {
+  border-radius: inherit;
+}
+
+.avatar-sm {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+}
+
+.avatar-md {
+  width: 3rem;
+  height: 3rem;
+}
+
+.avatar-lg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.avatar-status {
+  border: 2px solid var(--white);
+  background-color: var(--light);
+  padding: 8%;
+  border-radius: var(--rounded-full);
+  position: absolute;
+  bottom: 0;
+  right: 0.2em;
+}
+
+.avatar-status.online {
+  background-color: var(--success);
+}
+
+.avatar-status.offline {
+  background-color: var(--light);
+}
+
+.avatar-status.dnd {
+  background-color: var(--danger);
+}

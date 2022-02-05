@@ -1,0 +1,26 @@
+:root {
+  --primary: #60a5fa;
+  --secondary: #94a3b8;
+  --success: #34d399;
+  --danger: #f87171;
+  --warning: #fde68a;
+  --info: #93c5fd;
+  --light: #cbd5e1;
+  --dark: #2c272e;
+  --white: #fff;
+  /* screen size */
+  --xs: 480px;
+  --sm: 640px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1280px;
+  --shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  --rounded: 4px;
+  --rounded-full: 999px;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+}
