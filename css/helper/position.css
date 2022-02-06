@@ -1,0 +1,68 @@
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.static {
+  position: static;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.top-0 {
+  top: 0;
+}
+.start-0 {
+  left: 0;
+}
+.end-0 {
+  right: 0;
+}
+.bottom-0 {
+  bottom: 0;
+}
+
+.top-50 {
+  top: 50%;
+}
+.start-50 {
+  left: 50%;
+}
+.end-50 {
+  right: 50%;
+}
+.bottom-50 {
+  bottom: 50%;
+}
+
+.top-100 {
+  top: 100%;
+}
+.start-100 {
+  left: 100%;
+}
+.end-100 {
+  right: 100%;
+}
+.bottom-100 {
+  bottom: 100%;
+}
+
+.translate-middle {
+  transform: translate(-50%, -50%);
+}
+.translate-middle-x {
+  transform: translateX(-50%);
+}
+.translate-middle-y {
+  transform: translateY(-50%);
+}
