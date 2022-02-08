@@ -37,6 +37,9 @@
 .border-end {
   border-right: 1px var(--light) solid;
 }
+.border-none {
+  border: none;
+}
 
 .border-primary {
   border-color: var(--primary);
