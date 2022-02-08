@@ -1,0 +1,146 @@
+.btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  display: inline-block;
+  border: 1px var(--light) solid;
+  border-radius: var(--rounded);
+  font-size: 1rem;
+  padding: 0.4em 0.8em;
+  margin: 0.1em;
+  cursor: pointer;
+}
+
+.btn-sm {
+  font-size: 0.8rem;
+}
+
+.btn-lg {
+  font-size: 1.2rem;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.btn-primary,
+.btn-danger,
+.btn-info,
+.btn-secondary,
+.btn-success,
+.btn-warning,
+.btn-light,
+.btn-dark,
+.btn-white {
+  border: none;
+}
+
+.btn-outline-primary,
+.btn-outline-danger,
+.btn-outline-info,
+.btn-outline-secondary,
+.btn-outline-success,
+.btn-outline-warning,
+.btn-outline-light,
+.btn-outline-dark {
+  background-color: var(--white);
+  transition: background-color 0.3s linear;
+}
+
+.btn-primary,
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-danger,
+.btn-outline-danger:hover {
+  background-color: var(--danger);
+  color: var(--white);
+}
+
+.btn-info,
+.btn-outline-info:hover {
+  background-color: var(--info);
+  color: inherit;
+}
+.btn-secondary,
+.btn-outline-secondary:hover {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.btn-success,
+.btn-outline-success:hover {
+  background-color: var(--success);
+  color: var(--white);
+}
+.btn-warning,
+.btn-outline-warning:hover {
+  background-color: var(--warning);
+  color: inherit;
+}
+.btn-light,
+.btn-outline-light:hover {
+  background-color: var(--light);
+  color: inherit;
+}
+.btn-dark,
+.btn-outline-dark:hover {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.btn-white,
+.btn-outline-white:hover {
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+.btn-outline-primary {
+  border: 1px var(--primary) solid;
+  color: var(--primary);
+}
+.btn-outline-secondary {
+  border: 1px var(--secondary) solid;
+  color: var(--secondary);
+}
+.btn-outline-danger {
+  border: 1px var(--danger) solid;
+  color: var(--danger);
+}
+.btn-outline-success {
+  border: 1px var(--success) solid;
+  color: var(--success);
+}
+.btn-outline-warning {
+  border: 1px var(--warning) solid;
+  color: var(--warning);
+}
+.btn-outline-info {
+  border: 1px var(--info) solid;
+  color: var(--info);
+}
+.btn-outline-light {
+  border: 1px var(--light) solid;
+  color: var(--light);
+}
+.btn-outline-dark {
+  border: 1px var(--dark) solid;
+  color: var(--dark);
+}
+
+.btn-outlined-white {
+  border: 1px var(--white) solid;
+  color: var(--dark);
+}
+
+.icon-rounded {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: var(--rounded-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

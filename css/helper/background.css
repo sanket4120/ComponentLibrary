@@ -33,3 +33,7 @@
 .bg-transperent {
   background-color: transparent;
 }
+
+.shadow {
+  box-shadow: var(--shadow);
+}

@@ -1,0 +1,55 @@
+.alert {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  max-width: 30rem;
+  border-radius: var(--rounded);
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.alert-close {
+  font-size: 1.2em;
+  margin-left: 1.5em;
+}
+
+.alert-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.alert-secondary {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.alert-success {
+  background-color: var(--success);
+  color: var(--white);
+}
+
+.alert-danger {
+  background-color: var(--danger);
+  color: var(--white);
+}
+
+.alert-warning {
+  background-color: var(--warning);
+}
+
+.alert-info {
+  background-color: var(--info);
+}
+
+.alert-light {
+  background-color: var(--light);
+}
+
+.alert-dark {
+  background-color: var(--dark);
+  color: var(--white);
+}
