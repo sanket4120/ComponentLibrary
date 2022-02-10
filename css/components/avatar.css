@@ -10,6 +10,7 @@
 .avatar-md img,
 .avatar-lg img {
   border-radius: inherit;
+  object-fit: cover;
 }
 
 .avatar-sm {
