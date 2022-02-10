@@ -1,0 +1,59 @@
+.label {
+  font-weight: var(--font-medium);
+  display: inline-block;
+  font-size: 1em;
+  margin: 0.2em 0;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border-radius: var(--rounded);
+  border: 1px var(--light) solid;
+  outline: none;
+  padding: 0.3em 0.5em;
+  font-size: inherit;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 22vh;
+}
+
+.input-has-icon {
+  display: flex;
+  align-items: center;
+  border: 1px var(--light) solid;
+  border-radius: var(--rounded);
+}
+
+.input-has-icon .input {
+  border: none;
+}
+
+.message {
+  font-size: 0.9em;
+  display: inline-block;
+  margin: 0.3em 0;
+}
+
+.file-upload {
+  display: flex;
+  border: 1px var(--light) solid;
+  width: 100%;
+  border-radius: var(--rounded);
+}
+
+.file {
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: inherit;
+  padding: 0.4em 0.8em;
+  cursor: pointer;
+}
+
+.file-name {
+  padding: 0.4em 0.8em;
+  word-break: break-all;
+  display: inline-block;
+}
