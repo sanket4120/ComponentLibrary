@@ -1,0 +1,15 @@
+.list {
+  border: 1px var(--light) solid;
+  border-radius: var(--rounded);
+  display: inline-block;
+  min-width: 15.62rem;
+}
+
+.list-item {
+  padding: 0.3em 0.5em;
+  border-bottom: 1px var(--light) solid;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}

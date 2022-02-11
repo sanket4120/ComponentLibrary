@@ -14,23 +14,23 @@
 }
 
 .avatar-sm {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.avatar {
   width: 2rem;
   height: 2rem;
 }
 
-.avatar-md {
+.avatar {
   width: 3rem;
   height: 3rem;
 }
 
-.avatar-lg {
+.avatar-md {
   width: 4rem;
   height: 4rem;
+}
+
+.avatar-lg {
+  width: 5rem;
+  height: 5rem;
 }
 
 .avatar-status {
