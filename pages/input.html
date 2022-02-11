@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="../css/main.css" />
+
+<form class="m-3">
+  <div class="mb-3">
+    <label for="name" class="label">Name</label>
+    <input type="text" class="input" id="name" placeholder="Text Input" />
+  </div>
+
+  <div class="mb-3">
+    <label for="username" class="label">Username</label>
+    <div class="input-has-icon border-success">
+      <i class="far fa-user ml-2"></i>
+      <input
+        type="text"
+        class="input"
+        id="username"
+        placeholder="Input with icon"
+      />
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="username" class="label">Username</label>
+    <div class="input-has-icon border-success">
+      <input
+        type="text"
+        class="input"
+        id="username"
+        placeholder="Input with success message"
+      />
+      <i class="fas fa-check mr-2"></i>
+    </div>
+    <span class="message txt-success">Username is available</span>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="label">Email</label>
+    <input
+      type="email"
+      class="input border-danger"
+      id="email"
+      placeholder="Input with error message"
+    />
+    <span class="message txt-danger">Invalid Email</span>
+  </div>
+
+  <div class="mb-3">
+    <label for="message" class="label">message</label>
+    <textarea id="message" rows="5" class="textarea">
+    Hello Everyone
+    </textarea>
+  </div>
+
+  <div class="mb-3">
+    <label class="label block">Radio Button</label>
+    <input type="radio" name="choice" id="choice1" value="one" />
+    <label for="choice1" class="label">One</label>
+    <input type="radio" name="choice" id="choice2" value="two" />
+    <label for="choice2" class="label">Two</label>
+  </div>
+
+  <div class="mb-3">
+    <label for="file" class="label">Upload Profile Photo</label>
+    <input type="file" id="file" class="hide" />
+
+    <div class="file-upload">
+      <label for="file" class="file"> Choose File </label>
+      <span class="file-name">Profile.png</span>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <input type="checkbox" id="agree" />
+    <label for="agree" class="label ml-2">I agree</label>
+  </div>
+
+  <div class="mb-3">
+    <label for="country" class="label">Select Country</label>
+    <select name="contry" id="country" class="input">
+      <option value="india">India</option>
+      <option value="america">America</option>
+      <option value="africa">Africa</option>
+    </select>
+  </div>
+
+  <div class="mb-3 txt-center">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
