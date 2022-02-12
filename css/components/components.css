@@ -1,8 +1,9 @@
+@import './navbar.css';
 @import './list.css';
-@import './image.css';
 @import './input.css';
 @import './card.css';
 @import './avatar.css';
 @import './badge.css';
 @import './alert.css';
 @import './button.css';
+@import './image.css';
