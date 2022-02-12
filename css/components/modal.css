@@ -1,0 +1,28 @@
+.modal {
+  box-shadow: var(--shadow);
+  background-color: var(--white);
+  border-radius: var(--rounded);
+  max-width: 30rem;
+}
+.modal-header,
+.modal-footer,
+.modal-body {
+  padding: 0.5rem 0.7rem;
+}
+
+.modal-container {
+  position: fixed;
+  background-color: rgba(203, 213, 225, 0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-container .modal {
+  margin: 0 1.5rem;
+}
