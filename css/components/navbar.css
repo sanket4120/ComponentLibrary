@@ -38,18 +38,6 @@ header {
   cursor: pointer;
 }
 
-.container {
-  width: 95%;
-  max-width: 1450px;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 90%;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .navbar-toggler {
     display: none;
