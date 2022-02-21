@@ -1,53 +1,186 @@
-<link rel="stylesheet" href="../css/main.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/site.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="border-bottom">
+      <nav class="navbar container">
+        <div class="navbar-brand">
+          <div class="nav-item">
+            <h3><a href="../index.html">Modulo</a></h3>
+          </div>
+        </div>
+        <ul>
+          <li class="navbar-item size-4">
+            <a
+              href="https://github.com/sanket4120/ComponentLibrary"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li
+            class="navbar-toggler navbar-item"
+            id="navbar-toggler"
+            data-toggle="#sidenav"
+          >
+            <i class="fa-solid fa-bars icon"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<!-- ALERT -->
-<h3 class="size-3 txt-center">Alert</h3>
-<div class="m-3 flex flex-wrap">
-  <div>
-    <div class="alert alert-primary">A simple primary alert—check it out!</div>
-    <div class="alert alert-secondary">
-      A simple primary alert—check it out!
-    </div>
-    <div class="alert alert-danger">A simple primary alert—check it out!</div>
-    <div class="alert alert-success">A simple success alert—check it out!</div>
-    <div class="alert alert-warning">A simple warning alert—check it out!</div>
-    <div class="alert alert-info">A simple info alert—check it out!</div>
-    <div class="alert alert-light">A simple info alert—check it out!</div>
-    <div class="alert alert-dark">A simple info alert—check it out!</div>
-  </div>
+    <div class="grid gap-2">
+      <aside class="col col-md-3 col-lg-2 border-end" id="sidenav">
+        <ul class="list-unstyled p-3">
+          <li class="list-item">
+            <a href="./installation.html">Get Started</a>
+          </li>
+          <li class="list-item">
+            <a href="./alert.html">Alert</a>
+          </li>
+          <li class="list-item">
+            <a href="./avatar.html">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="./badge.html">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="./button.html">Button</a>
+          </li>
+          <li class="list-item">
+            <a href="./card.html">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="./grid.html">Grid</a>
+          </li>
+          <li class="list-item">
+            <a href="./image.html">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="./input.html">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="./list.html">List</a>
+          </li>
+          <li class="list-item">
+            <a href="./modal.html">Modal</a>
+          </li>
+          <li class="list-item">
+            <a href="./navbar.html">Navigation</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Slider</a>
+          </li>
+          <li class="list-item">
+            <a href="./typography.html">Typography</a>
+          </li>
+        </ul>
+      </aside>
 
-  <div>
-    <div class="alert alert-primary">
-      A simple primary alert—check it out!
-      <i class="fas fa-times alert-close"></i>
+      <main class="col col-md-9 col-lg-10 p-3">
+        <div class="mb-4">
+          <h1 class="mb-3">Alert</h1>
+          <p>
+            Provide contextual feedback messages for typical user actions with
+            the handful of available and flexible alert messages.
+          </p>
+        </div>
+
+        <section>
+          <div class="mb-4">
+            <p>
+              Alerts are available for any length of text, as well as an
+              optional close button. For proper styling, use one of the eight
+              required contextual classes (e.g., .alert-success).
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div
+              class="border rounded mb-3 flex flex-column align-items-center p-2"
+            >
+              <div class="alert alert-primary">
+                A simple primary alert—check it out!
+              </div>
+              <div class="alert alert-secondary">
+                A simple primary alert—check it out!
+              </div>
+              <div class="alert alert-danger">
+                A simple primary alert—check it out!
+              </div>
+              <div class="alert alert-success">
+                A simple success alert—check it out!
+              </div>
+              <div class="alert alert-warning">
+                A simple warning alert—check it out!
+              </div>
+              <div class="alert alert-info">
+                A simple info alert—check it out!
+              </div>
+              <div class="alert alert-light">
+                A simple light alert—check it out!
+              </div>
+              <div class="alert alert-dark">
+                A simple dark alert—check it out!
+              </div>
+            </div>
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520A%2520simple%2520primary%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2520%2520A%2520simple%2520primary%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520A%2520simple%2520primary%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520A%2520simple%2520success%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520A%2520simple%2520warning%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2520%2520A%2520simple%2520info%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-light%2522%253E%250A%2520%2520A%2520simple%2520light%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-dark%2522%253E%250A%2520%2520A%2520simple%2520dark%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E"
+                style="
+                  height: 616px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Alert with close button</h3>
+          </div>
+
+          <div class="mb-4">
+            <div
+              class="border rounded flex flex-column align-items-center mb-3 p-2"
+            >
+              <div class="alert alert-primary">
+                A simple primary alert—check it out!
+                <i class="fas fa-times alert-close"></i>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520A%2520simple%2520primary%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520alert-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 243px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-    <div class="alert alert-secondary">
-      A simple primary alert—check it out!
-      <i class="fas fa-times alert-close"></i>
-    </div>
-    <div class="alert alert-danger">
-      A simple primary alert—check it out!
-      <i class="fas fa-times alert-close"></i>
-    </div>
-    <div class="alert alert-success">
-      A simple success alert—check it out!
-      <i class="fas fa-times alert-close"></i>
-    </div>
-    <div class="alert alert-warning">
-      A simple warning alert—check it out!
-      <i class="fas fa-times alert-close"></i>
-    </div>
-    <div class="alert alert-info">
-      A simple info alert—check it out!
-      <i class="fas fa-times alert-close"></i>
-    </div>
-    <div class="alert alert-light">
-      A simple info alert—check it out!
-      <i class="fas fa-times alert-close"></i>
-    </div>
-    <div class="alert alert-dark">
-      A simple info alert—check it out!
-      <i class="fas fa-times alert-close"></i>
-    </div>
-  </div>
-</div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

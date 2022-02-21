@@ -1,32 +1,221 @@
-<link rel="stylesheet" href="../css/main.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/site.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="border-bottom">
+      <nav class="navbar container">
+        <div class="navbar-brand">
+          <div class="nav-item">
+            <h3><a href="../index.html">Modulo</a></h3>
+          </div>
+        </div>
+        <ul>
+          <li class="navbar-item size-4">
+            <a
+              href="https://github.com/sanket4120/ComponentLibrary"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li
+            class="navbar-toggler navbar-item"
+            id="navbar-toggler"
+            data-toggle="#sidenav"
+          >
+            <i class="fa-solid fa-bars icon"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<div class="grid min-vh-100">
-  <div class="bg-danger col col-xs-6 col-md-4 col-lg-3">
-    <h1>
-      sm-span6 <br />
-      md-span4 <br />
-      lg-span3
-    </h1>
-  </div>
-  <div class="bg-success col col-xs-6 col-md-4 col-lg-3">
-    <h1>
-      sm-span6 <br />
-      md-span4 <br />
-      lg-span3
-    </h1>
-  </div>
-  <div class="bg-warning col col-xs-6 col-md-4 col-lg-3">
-    <h1>
-      sm-span6 <br />
-      md-span4 <br />
-      lg-span3
-    </h1>
-  </div>
-  <div class="bg-info col col-xs-6 col-md-4 col-lg-3">
-    <h1>
-      sm-span6 <br />
-      md-span4 <br />
-      lg-span3
-    </h1>
-  </div>
-</div>
+    <div class="grid gap-2">
+      <aside class="col col-md-3 col-lg-2 border-end" id="sidenav">
+        <ul class="list-unstyled p-3">
+          <li class="list-item">
+            <a href="./installation.html">Get Started</a>
+          </li>
+          <li class="list-item">
+            <a href="./alert.html">Alert</a>
+          </li>
+          <li class="list-item">
+            <a href="./avatar.html">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="./badge.html">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="./button.html">Button</a>
+          </li>
+          <li class="list-item">
+            <a href="./card.html">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="./grid.html">Grid</a>
+          </li>
+          <li class="list-item">
+            <a href="./image.html">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="./input.html">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="./list.html">List</a>
+          </li>
+          <li class="list-item">
+            <a href="./modal.html">Modal</a>
+          </li>
+          <li class="list-item">
+            <a href="./navbar.html">Navigation</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Slider</a>
+          </li>
+          <li class="list-item">
+            <a href="./typography.html">Typography</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="col col-md-9 col-lg-10 p-3">
+        <div class="mb-4">
+          <h1 class="mb-3">Grid</h1>
+          <p>
+            Grids are used for layouting the elements in row and column manner.
+          </p>
+        </div>
+
+        <!-- Intro -->
+        <section>
+          <div class="mb-4">
+            <p>
+              Use grid layout with <b>.grid</b> & <b>.col</b> class. Grid uses
+              12 column system.
+            </p>
+            <p>
+              By default element with <b>.col</b> class will span across 12
+              columns. Use <b>.col-span_number</b> (e.g., .col-4) class to span
+              across multiple columns. In <b>.col-span_number</b> span_number
+              can be any number from 1 to 12.
+            </p>
+          </div>
+          <div class="mb-4">
+            <div class="border rounded p-2 mb-3">
+              <div class="grid">
+                <div class="col-12 border border-primary">Span 12</div>
+                <div class="col-5 border border-secondary">Span 5</div>
+                <div class="col-7 border border-danger">Sapn 7</div>
+              </div>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=615&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-12%2522%253ESpan%252012%253C%252Fdiv%253E%2509%2509%2509%2509%250A%2520%2520%253Cdiv%2520class%253D%2522col-5%2522%253ESpan%25205%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-7%2522%253ESapn%25207%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 262px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Spacing -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Gap</h3>
+            <p>
+              Give space between rows with <b>.row-gap-space_count</b> (e.g.,
+              .row-gap-1) & Similarly apply space between columns with
+              <b>.col-gap-space_count</b> (e.g., .col-gap-1).
+              <b>space_count</b> can be any number from 1 to 4 where
+            </p>
+            <ul>
+              <li>1 = 0.5rem</li>
+              <li>2 = 1rem</li>
+              <li>3 = 1.5rem</li>
+              <li>4 = 2rem</li>
+            </ul>
+            <p>
+              Use <b>.gap-space_count</b> class (e.g., .gap-1) to apply space
+              between row & column with a single class.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div class="border rounded mb-3 p-2">
+              <div class="grid gap-1">
+                <div class="col-12 border border-primary">Span 12</div>
+                <div class="col-5 border border-secondary">Span 5</div>
+                <div class="col-7 border border-danger">Sapn 7</div>
+              </div>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=615&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520gap-1%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-12%2522%253ESpan%252012%253C%252Fdiv%253E%2509%2509%2509%2509%250A%2520%2520%253Cdiv%2520class%253D%2522col-5%2522%253ESpan%25205%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-7%2522%253ESapn%25207%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 262px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Responsive Grid -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Responsive Grid</h3>
+            <p>Change column span according to screen size.</p>
+            <p>
+              Grid supports five responsive breakpoints (xs, sm, md, lg, xl).
+              Breakpoints are based on min-width media queries, meaning they
+              affect that breakpoint and all those above it (e.g., .col-sm-4
+              applies to sm, md, lg, xl). This means you can control container
+              and column sizing and behavior by each breakpoint.
+            </p>
+          </div>
+          <div class="mb-4">
+            <div class="border rounded p-2 mb-3">
+              <div class="grid gap-1">
+                <div class="col col-sm-6 col-md-4 col-lg-3 border">Demo</div>
+                <div class="col col-sm-6 col-md-4 col-lg-3 border">Demo</div>
+                <div class="col col-sm-6 col-md-4 col-lg-3 border">Demo</div>
+                <div class="col col-sm-6 col-md-4 col-lg-3 border">Demo</div>
+              </div>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=615&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520gap-1%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col%2520col-sm-6%2520col-md-4%2520col-lg-3%2522%253EDemo%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col%2520col-sm-6%2520col-md-4%2520col-lg-3%2522%253EDemo%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col%2520col-sm-6%2520col-md-4%2520col-lg-3%2522%253EDemo%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col%2520col-sm-6%2520col-md-4%2520col-lg-3%2522%253EDemo%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 281px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

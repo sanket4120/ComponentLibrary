@@ -25,7 +25,6 @@ h6 {
 
 p {
   font-size: 1rem;
-  line-height: 1.4rem;
   font-weight: var(--font-normal);
 }
 
@@ -58,12 +57,6 @@ p {
   line-height: 1.2rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 .size-1,
 .size-2,
 .size-3,
@@ -71,7 +64,7 @@ h6,
 .size-5,
 .size-6,
 .size-7 {
-  font-weight: var(--font-semibold);
+  font-weight: var(--font-normal);
 }
 
 .txt-center {

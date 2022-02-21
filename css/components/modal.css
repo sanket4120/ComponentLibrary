@@ -10,6 +10,10 @@
   padding: 0.5rem 0.7rem;
 }
 
+#modal-close {
+  cursor: pointer;
+}
+
 .modal-container {
   position: fixed;
   background-color: rgba(203, 213, 225, 0.4);

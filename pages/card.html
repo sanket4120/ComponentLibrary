@@ -1,133 +1,353 @@
-<link rel="stylesheet" href="../css/main.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/site.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="border-bottom">
+      <nav class="navbar container">
+        <div class="navbar-brand">
+          <div class="nav-item">
+            <h3><a href="../index.html">Modulo</a></h3>
+          </div>
+        </div>
+        <ul>
+          <li class="navbar-item size-4">
+            <a
+              href="https://github.com/sanket4120/ComponentLibrary"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li
+            class="navbar-toggler navbar-item"
+            id="navbar-toggler"
+            data-toggle="#sidenav"
+          >
+            <i class="fa-solid fa-bars icon"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<!-- Card -->
-<div class="card">
-  <div class="card-header">card header</div>
-  <img src="../images/demoImg.png" alt="alt text" class="card-image" />
-  <div class="card-body">
-    <h3 class="card-title">Card title</h3>
-    <h5 class="card-subtitle">Card Subtitle</h5>
-    <p class="card-text">
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </p>
-  </div>
-  <div class="card-footer border-top">Card Footer</div>
-</div>
+    <div class="grid gap-2">
+      <aside class="col col-md-3 col-lg-2 border-end" id="sidenav">
+        <ul class="list-unstyled p-3">
+          <li class="list-item">
+            <a href="./installation.html">Get Started</a>
+          </li>
+          <li class="list-item">
+            <a href="./alert.html">Alert</a>
+          </li>
+          <li class="list-item">
+            <a href="./avatar.html">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="./badge.html">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="./button.html">Button</a>
+          </li>
+          <li class="list-item">
+            <a href="./card.html">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="./grid.html">Grid</a>
+          </li>
+          <li class="list-item">
+            <a href="./image.html">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="./input.html">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="./list.html">List</a>
+          </li>
+          <li class="list-item">
+            <a href="./modal.html">Modal</a>
+          </li>
+          <li class="list-item">
+            <a href="./navbar.html">Navigation</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Slider</a>
+          </li>
+          <li class="list-item">
+            <a href="./typography.html">Typography</a>
+          </li>
+        </ul>
+      </aside>
 
-<!-- Text Only Card -->
-<div class="card">
-  <div class="card-body">
-    <h3 class="card-title">Card title</h3>
-    <h5 class="card-subtitle">Card Subtitle</h5>
-    <p class="card-text">
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </p>
-  </div>
-  <div class="card-footer border-top">Card Footer</div>
-</div>
+      <main class="col col-md-9 col-lg-10 p-3">
+        <div class="mb-4">
+          <h1 class="mb-3">Cards</h1>
+          <p>
+            A card is a flexible and extensible content container. It includes
+            options for headers and footers, a wide variety of content & image.
+          </p>
+        </div>
 
-<!-- Card Demo -->
-<div class="card">
-  <img src="../images/shoes.png" alt="alt text" class="card-image" />
-  <div class="card-body">
-    <h3 class="card-title">Adidas Originals</h3>
-    <div class="card-subtitle">Men's running shoes</div>
-    <div class="size-5 mt-3">
-      <span class="pr-2">Rs 1400</span>
-      <span class="txt-light txt-deleted">Rs 2000</span>
+        <!-- Card demo -->
+        <section>
+          <div class="mb-4">
+            Below is an example of a basic card with mixed content and a fixed
+            width. Cards have no fixed width to start, so they’ll naturally fill
+            the full width of its parent element.
+          </div>
+
+          <div class="mb-4">
+            <div
+              class="border rounded flex justify-content-center align-items-center p-2 mb-3"
+            >
+              <div class="card" style="max-width: 20rem">
+                <div class="card-header">card header</div>
+                <img
+                  src="../images/demoImg.png"
+                  alt="alt text"
+                  class="card-image"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Card title</h3>
+                  <h5 class="card-subtitle">Card Subtitle</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-footer border-top">Card Footer</div>
+              </div>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%2520style%253D%2522max-width%253A%252020rem%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520card%2520header%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%252Fimages%252FdemoImg.png%2522%2520alt%253D%2522alt%2520text%2522%2520class%253D%2522card-image%2522%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ECard%2520title%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Ch5%2520class%253D%2522card-subtitle%2522%253ECard%2520Subtitle%253C%252Fh5%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520Some%2520quick%2520example%2520text%2520to%2520build%2520on%2520the%2520card%2520title%2520and%2520make%2520up%2520the%2520bulk%2520of%250A%2520%2520%2520%2520the%2520card%27s%2520content.%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2520border-top%2522%253E%250A%2520%2520%2520%2520Card%2520Footer%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 502px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Text only card -->
+        <section>
+          <div class="mb-4">
+            <h3>Text only card</h3>
+          </div>
+
+          <div class="mb-4">
+            <div
+              class="border rounded flex justify-content-center align-items-center p-2 mb-3"
+            >
+              <div class="card" style="max-width: 20rem">
+                <div class="card-body">
+                  <h3 class="card-title">Card title</h3>
+                  <h5 class="card-subtitle">Card Subtitle</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-footer border-top">Card Footer</div>
+              </div>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%2520style%253D%2522max-width%253A%252020rem%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ECard%2520title%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Ch5%2520class%253D%2522card-subtitle%2522%253ECard%2520Subtitle%253C%252Fh5%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520Some%2520quick%2520example%2520text%2520to%2520build%2520on%2520the%2520card%2520title%2520and%2520make%2520up%2520the%2520bulk%2520of%250A%2520%2520%2520%2520%2520%2520the%2520card%27s%2520content.%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2520border-top%2522%253ECard%2520Footer%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 391px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card with badge -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Badge</h3>
+            <p>Apply badge on top left and top right side of card</p>
+          </div>
+
+          <div class="mb-4">
+            <div
+              class="border rounded flex justify-content-center align-items-center p-2 mb-3"
+            >
+              <div class="card" style="max-width: 20rem">
+                <button class="btn btn-white icon-rounded card-badge-top-end">
+                  <i class="fas fa-times"></i>
+                </button>
+                <button class="btn btn-primary card-badge-top-start">
+                  New
+                </button>
+
+                <img
+                  src="../images/shoes.png"
+                  alt="alt text"
+                  class="card-image"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Adidas Originals</h3>
+                  <div class="card-subtitle">Men's running shoes</div>
+                  <div class="size-5 mt-3">
+                    <span class="pr-2">Rs 1400</span>
+                    <span class="txt-light txt-deleted">Rs 2000</span>
+                  </div>
+                  <span class="fw-bold txt-danger">30% off</span>
+                </div>
+                <div class="card-footer flex">
+                  <button class="btn btn-outline-primary flex-grow-1">
+                    Add To Cart
+                  </button>
+                  <button class="btn btn-primary flex-grow-1">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%2520style%253D%2522max-width%253A%252020rem%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-white%2520icon-rounded%2520card-badge-top-end%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520card-badge-top-start%2522%253ENew%253C%252Fbutton%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%252Fimages%252Fshoes.png%2522%2520alt%253D%2522alt%2520text%2522%2520class%253D%2522card-image%2522%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253EAdidas%2520Originals%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-subtitle%2522%253EMen%27s%2520running%2520shoes%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522size-5%2520mt-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522pr-2%2522%253ERs%25201400%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-light%2520txt-deleted%2522%253ERs%25202000%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fw-bold%2520txt-danger%2522%253E30%2525%2520off%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2520flex%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2520flex-grow-1%2522%253EAdd%2520To%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520flex-grow-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 541px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card with overlay -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Overlay</h3>
+            <p>
+              Add an overlay with <b>overlay-container</b> &
+              <b>overlay</b> class
+            </p>
+            <p>
+              Put <b>overlay</b> inside <b> overlay container </b> and style it
+              with utility classes
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div
+              class="border rounded flex justify-content-center align-items-center p-2 mb-3"
+            >
+              <div class="card" style="max-width: 20rem">
+                <div class="overlay-container">
+                  <img
+                    src="../images/shoes.png"
+                    alt="alt text"
+                    class="card-image"
+                  />
+                  <div class="overlay align-self-center txt-white txt-center">
+                    <h3>Out Of Stock</h3>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Adidas Originals</h3>
+                  <div class="card-subtitle">Men's running shoes</div>
+                  <div class="size-5 mt-3">
+                    <span class="pr-2">Rs 1400</span>
+                    <span class="txt-light txt-deleted">Rs 2000</span>
+                  </div>
+                  <span class="fw-bold txt-danger">30% off</span>
+                </div>
+                <div class="card-footer flex">
+                  <button class="btn btn-outline-primary flex-grow-1">
+                    Add To Cart
+                  </button>
+                  <button class="btn btn-primary flex-grow-1">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%2520style%253D%2522max-width%253A%252020rem%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522overlay-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fimages%252Fshoes.png%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522alt%2520text%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522card-image%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay%2520align-self-center%2520txt-white%2520txt-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%253EOut%2520Of%2520Stock%253C%252Fh3%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253EAdidas%2520Originals%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-subtitle%2522%253EMen%27s%2520running%2520shoes%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522size-5%2520mt-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522pr-2%2522%253ERs%25201400%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-light%2520txt-deleted%2522%253ERs%25202000%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fw-bold%2520txt-danger%2522%253E30%2525%2520off%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2520flex%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2520flex-grow-1%2522%253E%250A%2520%2520%2520%2520%2520%2520Add%2520To%2520Cart%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520flex-grow-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 671px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Horizontal card -->
+        <section>
+          <div class="mb-4">
+            <h3>Horizontal card</h3>
+          </div>
+          <div class="mb-4">
+            <div
+              class="border rounded flex justify-content-center align-items-center p-2 mb-3"
+            >
+              <div class="card card-horizontal">
+                <img
+                  src="../images/shoes.png"
+                  alt="alt text"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <div class="card-body">
+                    <h3 class="card-title">Adidas Originals</h3>
+                    <div class="card-subtitle">Men's running shoes</div>
+                    <div class="size-5 mt-3">
+                      <span class="pr-2">Rs 1400</span>
+                      <span class="txt-light txt-deleted">Rs 2000</span>
+                    </div>
+                    <span class="fw-bold txt-danger">30% off</span>
+                  </div>
+                  <div class="card-footer flex">
+                    <button class="btn btn-outline-primary flex-grow-1">
+                      Add To Cart
+                    </button>
+                    <button class="btn btn-primary flex-grow-1">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520src%253D%2522..%252Fimages%252Fshoes.png%2522%250A%2520%2520alt%253D%2522alt%2520text%2522%250A%2520%2520class%253D%2522card-image%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2509%253Ch3%2520class%253D%2522card-title%2522%253EAdidas%2520Originals%253C%252Fh3%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522card-subtitle%2522%253EMen%27s%2520running%2520shoes%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522size-5%2520mt-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cspan%2520class%253D%2522pr-2%2522%253ERs%25201400%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cspan%2520class%253D%2522txt-light%2520txt-deleted%2522%253ERs%25202000%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2509%253Cspan%2520class%253D%2522fw-bold%2520txt-danger%2522%253E30%2525%2520off%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2520flex%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2520flex-grow-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520To%2520Cart%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520flex-grow-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 616px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-    <span class="fw-bold txt-danger">30% off</span>
-  </div>
-  <div class="card-footer flex">
-    <button class="btn btn-outline-primary flex-grow-1">Add To Cart</button>
-    <button class="btn btn-primary flex-grow-1">Buy Now</button>
-  </div>
-</div>
 
-<!-- Card with close button -->
-<div class="card">
-  <button class="btn btn-white icon-rounded card-badge">
-    <i class="fas fa-times"></i>
-  </button>
-  <img src="../images/shoes.png" alt="alt text" class="card-image" />
-  <div class="card-body">
-    <h3 class="card-title">Adidas Originals</h3>
-    <div class="card-subtitle">Men's running shoes</div>
-    <div class="size-5 mt-3">
-      <span class="pr-2">Rs 1400</span>
-      <span class="txt-light txt-deleted">Rs 2000</span>
-    </div>
-    <span class="fw-bold txt-danger">30% off</span>
-  </div>
-  <div class="card-footer flex">
-    <button class="btn btn-outline-primary flex-grow-1">Add To Cart</button>
-    <button class="btn btn-primary flex-grow-1">Buy Now</button>
-  </div>
-</div>
-
-<!-- Card with like badge -->
-<div class="card">
-  <button class="btn btn-white icon-rounded card-badge">
-    <i class="far fa-heart"></i>
-  </button>
-
-  <img src="../images/shoes.png" alt="alt text" class="card-image" />
-  <div class="card-body">
-    <h3 class="card-title">Adidas Originals</h3>
-    <div class="card-subtitle">Men's running shoes</div>
-    <div class="size-5 mt-3">
-      <span class="pr-2">Rs 1400</span>
-      <span class="txt-light txt-deleted">Rs 2000</span>
-    </div>
-    <span class="fw-bold txt-danger">30% off</span>
-  </div>
-  <div class="card-footer flex">
-    <button class="btn btn-outline-primary flex-grow-1">Add To Cart</button>
-    <button class="btn btn-primary flex-grow-1">Buy Now</button>
-  </div>
-</div>
-
-<!-- Overlay Card -->
-<div class="card">
-  <div class="overlay-container">
-    <img src="../images/shoes.png" alt="alt text" class="card-image" />
-    <div class="overlay align-self-center txt-white txt-center">
-      <h3>Out Of Stock</h3>
-    </div>
-  </div>
-  <div class="card-body">
-    <h3 class="card-title">Adidas Originals</h3>
-    <div class="card-subtitle">Men's running shoes</div>
-    <div class="size-5 mt-3">
-      <span class="pr-2">Rs 1400</span>
-      <span class="txt-light txt-deleted">Rs 2000</span>
-    </div>
-    <span class="fw-bold txt-danger">30% off</span>
-  </div>
-  <div class="card-footer flex">
-    <button class="btn btn-outline-primary flex-grow-1">Add To Cart</button>
-    <button class="btn btn-primary flex-grow-1">Buy Now</button>
-  </div>
-</div>
-
-<!-- Horizontal Card -->
-<div class="card card-horizontal">
-  <img src="../images/shoes.png" alt="alt text" class="card-image" />
-  <div class="card-content">
-    <div class="card-body">
-      <h3 class="card-title">Adidas Originals</h3>
-      <div class="card-subtitle">Men's running shoes</div>
-      <div class="size-5 mt-3">
-        <span class="pr-2">Rs 1400</span>
-        <span class="txt-light txt-deleted">Rs 2000</span>
-      </div>
-      <span class="fw-bold txt-danger">30% off</span>
-    </div>
-    <div class="card-footer flex">
-      <button class="btn btn-outline-primary flex-grow-1">Add To Cart</button>
-      <button class="btn btn-primary flex-grow-1">Buy Now</button>
-    </div>
-  </div>
-</div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

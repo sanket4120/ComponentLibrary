@@ -1,44 +1,242 @@
-<link rel="stylesheet" href="../css/main.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/site.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="border-bottom">
+      <nav class="navbar container">
+        <div class="navbar-brand">
+          <div class="nav-item">
+            <h3><a href="../index.html">Modulo</a></h3>
+          </div>
+        </div>
+        <ul>
+          <li class="navbar-item size-4">
+            <a
+              href="https://github.com/sanket4120/ComponentLibrary"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li
+            class="navbar-toggler navbar-item"
+            id="navbar-toggler"
+            data-toggle="#sidenav"
+          >
+            <i class="fa-solid fa-bars icon"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<h3 class="size-3">List</h3>
-<div class="m-3">
-  <ul class="list">
-    <li class="list-item">List Item 1</li>
-    <li class="list-item">List Item 2</li>
-    <li class="list-item">List Item 3</li>
-    <li class="list-item">List Item 4</li>
-  </ul>
-</div>
+    <div class="grid gap-2">
+      <aside class="col col-md-3 col-lg-2 border-end" id="sidenav">
+        <ul class="list-unstyled p-3">
+          <li class="list-item">
+            <a href="./installation.html">Get Started</a>
+          </li>
+          <li class="list-item">
+            <a href="./alert.html">Alert</a>
+          </li>
+          <li class="list-item">
+            <a href="./avatar.html">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="./badge.html">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="./button.html">Button</a>
+          </li>
+          <li class="list-item">
+            <a href="./card.html">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="./grid.html">Grid</a>
+          </li>
+          <li class="list-item">
+            <a href="./image.html">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="./input.html">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="./list.html">List</a>
+          </li>
+          <li class="list-item">
+            <a href="./modal.html">Modal</a>
+          </li>
+          <li class="list-item">
+            <a href="./navbar.html">Navigation</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Slider</a>
+          </li>
+          <li class="list-item">
+            <a href="./typography.html">Typography</a>
+          </li>
+        </ul>
+      </aside>
 
-<h3 class="size-3">Stacked List</h3>
-<div class="m-3">
-  <ul class="list">
-    <li class="list-item flex align-items-center">
-      <figure class="avatar rounded-full">
-        <img src="../images/avatar.png" alt="" />
-      </figure>
-      <div class="ml-3">
-        <p>Jenny Doe</p>
-        <p class="fw-light">jenny@xyz.com</p>
-      </div>
-    </li>
-    <li class="list-item flex align-items-center">
-      <figure class="avatar rounded-full">
-        <img src="../images/avatar.png" alt="" />
-      </figure>
-      <div class="ml-3">
-        <p>Jenny Doe</p>
-        <p class="fw-light">jenny@xyz.com</p>
-      </div>
-    </li>
-    <li class="list-item flex align-items-center">
-      <figure class="avatar rounded-full">
-        <img src="../images/avatar.png" alt="" />
-      </figure>
-      <div class="ml-3">
-        <p>Jenny Doe</p>
-        <p class="fw-light">jenny@xyz.com</p>
-      </div>
-    </li>
-  </ul>
-</div>
+      <main class="col col-md-9 col-lg-10 p-3">
+        <div class="mb-4">
+          <h1 class="mb-3">List</h1>
+          <p>
+            List groups are a flexible and powerful component for displaying a
+            series of content. Modify and extend them to support just about any
+            content within.
+          </p>
+        </div>
+
+        <section>
+          <div class="mb-4">
+            <div class="border rounded flex justify-content-center p-2 mb-3">
+              <ul class="list">
+                <li class="list-item">List Item 1</li>
+                <li class="list-item">List Item 2</li>
+                <li class="list-item">List Item 3</li>
+                <li class="list-item">List Item 4</li>
+              </ul>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EList%2520Item%25201%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EList%2520Item%25202%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EList%2520Item%25203%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EList%2520Item%25204%253C%252Fli%253E%250A%253C%252Ful%253E"
+                style="
+                  height: 281px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Horizontal list -->
+        <section>
+          <div class="mb-4">
+            <h3>Horizontal list</h3>
+            <p>Make horizontal list with <b>.list-horizontal</b> class</p>
+          </div>
+          <div class="mb-4">
+            <div class="border rounded flex justify-content-center p-2 mb-3">
+              <ul class="list-horizontal">
+                <li class="list-item">List Item 1</li>
+                <li class="list-item">List Item 2</li>
+                <li class="list-item">List Item 3</li>
+                <li class="list-item">List Item 4</li>
+              </ul>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cul%2520class%253D%2522list-horizontal%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EList%2520Item%25201%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EList%2520Item%25202%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EList%2520Item%25203%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EList%2520Item%25204%253C%252Fli%253E%250A%253C%252Ful%253E"
+                style="
+                  height: 281px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Unstyled list -->
+        <section>
+          <div class="mb-4">
+            <h3>Unstyled list</h3>
+            <p>Remove borders with <b>.list-unstyled</b> class</p>
+          </div>
+          <div class="mb-4">
+            <div class="border rounded flex justify-content-center p-2 mb-3">
+              <ul class="list-unstyled">
+                <li class="list-item">List Item 1</li>
+                <li class="list-item">List Item 2</li>
+                <li class="list-item">List Item 3</li>
+                <li class="list-item">List Item 4</li>
+              </ul>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-unstyled%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EList%2520Item%25201%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EList%2520Item%25202%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EList%2520Item%25203%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EList%2520Item%25204%253C%252Fli%253E%250A%253C%252Ful%253E"
+                style="
+                  height: 281px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- With Custom Content -->
+        <section>
+          <div class="mb-4">
+            <h3>With custom content</h3>
+          </div>
+          <div class="mb-4">
+            <div class="border rounded flex justify-content-center p-2 mb-3">
+              <ul class="list">
+                <li class="list-item flex align-items-center">
+                  <figure class="avatar rounded-full">
+                    <img src="../images/avatar.png" alt="avatar" />
+                  </figure>
+                  <div class="ml-3">
+                    <p>Jenny Doe</p>
+                    <p class="fw-light">jenny@xyz.com</p>
+                  </div>
+                </li>
+                <li class="list-item flex align-items-center">
+                  <figure class="avatar rounded-full">
+                    <img src="../images/avatar.png" alt="avatar" />
+                  </figure>
+                  <div class="ml-3">
+                    <p>Jenny Doe</p>
+                    <p class="fw-light">jenny@xyz.com</p>
+                  </div>
+                </li>
+                <li class="list-item flex align-items-center">
+                  <figure class="avatar rounded-full">
+                    <img src="../images/avatar.png" alt="avatar" />
+                  </figure>
+                  <div class="ml-3">
+                    <p>Jenny Doe</p>
+                    <p class="fw-light">jenny@xyz.com</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=615&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2520flex%2520align-items-center%2522%253E%250A%2520%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520rounded-full%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fimages%252Favatar.png%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ml-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253EJenny%2520Doe%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522fw-light%2522%253Ejenny%2540xyz.com%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2520flex%2520align-items-center%2522%253E%250A%2520%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520rounded-full%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fimages%252Favatar.png%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ml-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253EJenny%2520Doe%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522fw-light%2522%253Ejenny%2540xyz.com%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2520flex%2520align-items-center%2522%253E%250A%2520%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520rounded-full%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fimages%252Favatar.png%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ml-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253EJenny%2520Doe%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522fw-light%2522%253Ejenny%2540xyz.com%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+                style="
+                  height: 709px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

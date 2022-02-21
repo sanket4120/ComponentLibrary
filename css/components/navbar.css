@@ -1,5 +1,6 @@
 header {
   background-color: var(--white);
+  width: 100%;
 }
 
 .navbar {
@@ -7,6 +8,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 4rem;
+  padding: 1rem;
 }
 
 .navbar-menu {
@@ -22,9 +24,10 @@ header {
   display: flex;
   flex-direction: column;
   transition: all 0.3s linear;
+  z-index: 1;
 }
 
-.navbar-menu-visible {
+.translate-x-0 {
   transform: translateX(0px);
 }
 

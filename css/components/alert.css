@@ -3,6 +3,7 @@
   padding: 0.5em 1em;
   background: var(--white);
   box-shadow: var(--shadow);
+  width: 100%;
   max-width: 30rem;
   border-radius: var(--rounded);
   margin: 1em;

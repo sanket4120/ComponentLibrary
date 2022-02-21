@@ -1,33 +1,214 @@
-<link rel="stylesheet" href="../css/main.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/site.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="border-bottom">
+      <nav class="navbar container">
+        <div class="navbar-brand">
+          <div class="nav-item">
+            <h3><a href="../index.html">Modulo</a></h3>
+          </div>
+        </div>
+        <ul>
+          <li class="navbar-item size-4">
+            <a
+              href="https://github.com/sanket4120/ComponentLibrary"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li
+            class="navbar-toggler navbar-item"
+            id="navbar-toggler"
+            data-toggle="#sidenav"
+          >
+            <i class="fa-solid fa-bars icon"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<!-- BADGE -->
-<div class="m-6 flex justify-content-evenly align-items-center">
-  <figure class="avatar-lg rounded-full relative">
-    <img src="../images/avatar.png" alt="" />
-    <span class="badge absolute top-0 start-100 translate-middle-x">9</span>
-  </figure>
+    <div class="grid gap-2">
+      <aside class="col col-md-3 col-lg-2 border-end" id="sidenav">
+        <ul class="list-unstyled p-3">
+          <li class="list-item">
+            <a href="./installation.html">Get Started</a>
+          </li>
+          <li class="list-item">
+            <a href="./alert.html">Alert</a>
+          </li>
+          <li class="list-item">
+            <a href="./avatar.html">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="./badge.html">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="./button.html">Button</a>
+          </li>
+          <li class="list-item">
+            <a href="./card.html">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="./grid.html">Grid</a>
+          </li>
+          <li class="list-item">
+            <a href="./image.html">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="./input.html">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="./list.html">List</a>
+          </li>
+          <li class="list-item">
+            <a href="./modal.html">Modal</a>
+          </li>
+          <li class="list-item">
+            <a href="./navbar.html">Navigation</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Slider</a>
+          </li>
+          <li class="list-item">
+            <a href="./typography.html">Typography</a>
+          </li>
+        </ul>
+      </aside>
 
-  <figure class="avatar-md rounded relative">
-    <img src="../images/avatar.png" alt="" />
-    <span class="badge absolute top-0 start-100 translate-middle-x">9</span>
-  </figure>
-  <figure class="avatar rounded-full relative">
-    <img src="../images/avatar.png" alt="" />
-    <span class="badge absolute top-0 start-100 translate-middle">9</span>
-  </figure>
+      <main class="col col-md-9 col-lg-10 p-3">
+        <div class="mb-4">
+          <h1 class="mb-3">Badge</h1>
+          <p>Badge is a small count and labeling component.</p>
+        </div>
 
-  <figure class="relative">
-    <i class="far fa-envelope size-2"></i>
-    <span class="badge absolute top-0 start-100 translate-middle-x">9</span>
-  </figure>
+        <section>
+          <div class="mb-4">
+            <p>
+              Badges are circled by default but utility classes can be used to
+              change border type (e.g., .rounded)
+            </p>
+          </div>
 
-  <figure class="relative">
-    <i class="fas fa-house-damage size-3"></i>
-    <span class="badge absolute top-0 start-100 translate-middle">9</span>
-  </figure>
+          <div class="mb-4">
+            <div
+              class="border rounded flex flex-column align-items-center p-2 mb-3"
+            >
+              <h1 class="my-2">
+                Example heading <span class="badge rounded">New</span>
+              </h1>
+              <h2 class="my-2">
+                Example heading <span class="badge rounded">New</span>
+              </h2>
+              <h3 class="my-2">
+                Example heading <span class="badge rounded">New</span>
+              </h3>
+            </div>
 
-  <figure class="relative">
-    <i class="fas fa-wifi size-4"></i>
-    <span class="badge absolute top-0 start-100 translate-middle">9</span>
-  </figure>
-</div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253E%2520%250A%2509Example%2520heading%2520%253Cspan%2520class%253D%2522badge%2520rounded%2522%253ENew%253C%252Fspan%253E%2520%250A%253C%252Fh1%253E%250A%253Ch2%253E%250A%2520%2520Example%2520heading%2520%253Cspan%2520class%253D%2522badge%2520rounded%2522%253ENew%253C%252Fspan%253E%250A%253C%252Fh2%253E%250A%253Ch3%253E%250A%2520%2520Example%2520heading%2520%253Cspan%2520class%253D%2522badge%2520rounded%2522%253ENew%253C%252Fspan%253E%250A%253C%252Fh3%253E"
+                style="
+                  height: 336px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Badge on button</h3>
+            <p>
+              Badges can be used as part of links or buttons to provide a
+              counter.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div class="border rounded flex justify-content-center p-2 mb-3">
+              <button class="btn">
+                Notification <span class="badge rounded bg-primary">9</span>
+              </button>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2522%253E%250A%2509Notification%2520%250A%2520%2520%2509%253Cspan%2520class%253D%2522badge%2520rounded%2520bg-primary%2522%253E9%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+                style="
+                  height: 243px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Positioned badge -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Positioned</h3>
+            <p>
+              Use utilities to modify a <b>.badge</b> and position it in the
+              corner.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div
+              class="border rounded flex flex-wrap justify-content-evenly align-items-center p-2 mb-3"
+            >
+              <figure class="avatar-md rounded relative">
+                <img src="../images/avatar.png" alt="avatar" />
+                <span class="badge absolute top-0 start-100 translate-middle-x">
+                  9
+                </span>
+              </figure>
+
+              <figure class="relative">
+                <span class="size-4">
+                  <i class="fa-solid fa-wifi"></i>
+                </span>
+
+                <span class="badge absolute top-0 start-100 translate-middle">
+                  9
+                </span>
+              </figure>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cfigure%2520class%253D%2522avatar-md%2520rounded%2520relative%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%252Fimages%252Favatar.png%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520absolute%2520top-0%2520start-100%2520translate-middle-x%2522%253E%250A%2520%2520%2520%25209%250A%2520%2520%253C%252Fspan%253E%250A%253C%252Ffigure%253E%250A%250A%253Cfigure%2520class%253D%2522relative%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522size-4%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-wifi%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520absolute%2520top-0%2520start-100%2520translate-middle%2522%253E%250A%2520%2520%2520%25209%250A%2520%2520%253C%252Fspan%253E%250A%253C%252Ffigure%253E"
+                style="
+                  height: 448px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
