@@ -1,79 +1,335 @@
-<link rel="stylesheet" href="../css/main.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/site.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="border-bottom">
+      <nav class="navbar container">
+        <div class="navbar-brand">
+          <div class="nav-item">
+            <h3><a href="../index.html">Modulo</a></h3>
+          </div>
+        </div>
+        <ul>
+          <li class="navbar-item size-4">
+            <a
+              href="https://github.com/sanket4120/ComponentLibrary"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li
+            class="navbar-toggler navbar-item"
+            id="navbar-toggler"
+            data-toggle="#sidenav"
+          >
+            <i class="fa-solid fa-bars icon"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<!-- BUTTONS -->
-<div class="m-3">
-  <!-- Primary Buttons -->
-  <h3 class="size-3">Primary Buttons</h3>
-  <p>using <b>btn</b> & <b>btn-colorName</b> class</p>
+    <div class="grid gap-2">
+      <aside class="col col-md-3 col-lg-2" id="sidenav">
+        <ul class="list-unstyled p-3">
+          <li class="list-item">
+            <a href="./installation.html">Get Started</a>
+          </li>
+          <li class="list-item">
+            <a href="./alert.html">Alert</a>
+          </li>
+          <li class="list-item">
+            <a href="./avatar.html">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="./badge.html">Badge</a>
+          </li>
+          <li class="list-item active">
+            <a href="./button.html">Button</a>
+          </li>
+          <li class="list-item">
+            <a href="./card.html">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="./grid.html">Grid</a>
+          </li>
+          <li class="list-item">
+            <a href="./image.html">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="./input.html">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="./list.html">List</a>
+          </li>
+          <li class="list-item">
+            <a href="./modal.html">Modal</a>
+          </li>
+          <li class="list-item">
+            <a href="./navbar.html">Navigation</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Slider</a>
+          </li>
+          <li class="list-item">
+            <a href="./typography.html">Typography</a>
+          </li>
+        </ul>
+      </aside>
 
-  <button class="btn btn-primary">Submit</button>
-  <button class="btn btn-secondary">Submit</button>
-  <button class="btn btn-danger">Submit</button>
-  <button class="btn btn-success">Submit</button>
-  <button class="btn btn-warning">Submit</button>
-  <button class="btn btn-info">Submit</button>
-  <button class="btn btn-light">Submit</button>
-  <button class="btn btn-dark">Submit</button>
+      <main class="col col-md-9 col-lg-10 p-3">
+        <div class="mb-4">
+          <h1 class="mb-3">Button</h1>
+          <p>
+            Use custom button styles for actions in forms, dialogs, and more
+            with support for multiple sizes, states, and more.
+          </p>
+        </div>
 
-  <!-- Outlined Buttons -->
-  <h3 class="size-3">Outlined Buttons</h3>
-  <p>using <b>btn</b> <b>btn-outline-colorName</b> class</p>
+        <section>
+          <div class="mb-4">
+            <p>use <b>.btn</b> class to apply basic button styles</p>
+          </div>
 
-  <button class="btn btn-outline-primary">Submit</button>
-  <button class="btn btn-outline-secondary">Submit</button>
-  <button class="btn btn-outline-danger">Submit</button>
-  <button class="btn btn-outline-success">Submit</button>
-  <button class="btn btn-outline-warning">Submit</button>
-  <button class="btn btn-outline-info">Submit</button>
-  <button class="btn btn-outline-light">Submit</button>
-  <button class="btn btn-outline-dark">Submit</button>
+          <div class="mb-4">
+            <div
+              class="border rounded flex justify-content-evenly align-items-center p-2 mb-3"
+            >
+              <button class="btn">Button</button>
+              <a href="#" class="btn">Link</a>
+              <input type="submit" value="Submit" class="btn" />
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2522%253EButton%253C%252Fbutton%253E%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2522%253ELink%253C%252Fa%253E%250A%253Cinput%2520type%253D%2522submit%2522%2520value%253D%2522Submit%2522%2520class%253D%2522btn%2522%2520%252F%253E"
+                style="
+                  height: 242px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
 
-  <!-- Link Buttons -->
-  <h3 class="size-3">Links</h3>
-  <a href="#" class="btn btn-primary" role="button">Home</a>
-  <a href="#" class="btn btn-primary" role="button">About</a>
-  <a href="#" class="btn btn-primary" role="button ">Contact </a>
+        <!-- Colors -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Colors</h3>
+            <p>
+              Change color of buttons as per your use case with
+              <b>.btn-color_name</b> (e.g., .btn-primary)
+            </p>
+          </div>
 
-  <!-- Disabled Button & Link -->
-  <h3 class="size-3">Disabled Button & Link</h3>
-  <p>using <b>disabled</b> class</p>
+          <div class="mb-4">
+            <div
+              class="border rounded flex flex-wrap justify-content-evenly align-items-center p-2 mb-3"
+            >
+              <button class="btn btn-primary">Primary</button>
+              <button class="btn btn-secondary">Secondary</button>
+              <button class="btn btn-danger">Danger</button>
+              <button class="btn btn-success">Success</button>
+              <button class="btn btn-warning">Warning</button>
+              <button class="btn btn-info">Info</button>
+              <button class="btn btn-light">Light</button>
+              <button class="btn btn-dark">Dark</button>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-info%2522%253EInfo%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-light%2522%253ELight%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-dark%2522%253EDark%253C%252Fbutton%253E"
+                style="
+                  height: 335px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
 
-  <button class="btn btn-danger disabled">Button</button>
-  <a href="#" class="btn btn-success disabled" role="button">Link</a>
+        <!-- Outlined button -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Outlined</h3>
+            <p>With <b>.btn</b> class buttons are outlined by default</p>
+            <p>
+              Apply 8 different colors to the outlined buttons using
+              <b>.btn-outline-color_name</b> (e.g., .btn-outlined-danger)
+            </p>
+          </div>
 
-  <!-- Button with icons -->
-  <h3 class="size-3">Button with icons</h3>
-  <button class="btn btn-secondary">
-    <i class="far fa-user mr-1"></i>
-    Profile
-  </button>
+          <div class="mb-4">
+            <div
+              class="border rounded flex flex-wrap justify-content-evenly align-items-center p-2 mb-3"
+            >
+              <button class="btn btn-outline-primary">Submit</button>
+              <button class="btn btn-outline-secondary">Submit</button>
+              <button class="btn btn-outline-danger">Submit</button>
+              <button class="btn btn-outline-success">Submit</button>
+              <button class="btn btn-outline-warning">Submit</button>
+              <button class="btn btn-outline-info">Submit</button>
+              <button class="btn btn-outline-light">Submit</button>
+              <button class="btn btn-outline-dark">Submit</button>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253ESubmit%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2522%253ESubmit%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-danger%2522%253ESubmit%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-success%2522%253ESubmit%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-warning%2522%253ESubmit%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-info%2522%253ESubmit%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-light%2522%253ESubmit%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-dark%2522%253ESubmit%253C%252Fbutton%253E"
+                style="
+                  height: 335px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
 
-  <button class="btn btn-info">
-    <i class="fas fa-cog mr-1"></i>
-    Setup
-  </button>
+        <!-- Disabled button -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Disabled</h3>
+            <p>Make button disabled with <b>.disabled</b> class</p>
+          </div>
+          <div class="mb-4">
+            <div
+              class="border rounded flex flex-wrap justify-content-evenly align-items-center p-2 mb-3"
+            >
+              <button class="btn btn-danger disabled">Disabled</button>
+              <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=615&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-danger%2520disabled%2522%253E%250A%2520%2520Disabled%250A%253C%252Fbutton%253E%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary%2520disabled%2522%253E%250A%2520%2520Disabled%2520Link%250A%253C%252Fa%253E"
+                style="
+                  height: 281px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
 
-  <h3 class="size-3">Action Buttons</h3>
+        <!-- sizing -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Sizing</h3>
+            <p>Add <b>.btn-sm</b> or <b>.btn-lg</b> for additional sizes</p>
+          </div>
 
-  <!-- Action button with only icons -->
-  <h6 class="size-5">Action button with only icons</h6>
-  <p>
-    using <b>shadow</b> & <b>icon-rounded</b> class to make it action button
-  </p>
+          <div class="mb-4">
+            <div
+              class="border rounded flex flex-wrap justify-content-evenly align-items-center p-2 mb-3"
+            >
+              <button class="btn btn-sm btn-primary">Small</button>
+              <button class="btn btn-primary">Medium</button>
+              <button class="btn btn-lg btn-primary">Large</button>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-sm%2520btn-primary%2522%253ESmall%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EMedium%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-lg%2520btn-primary%2522%253ELarge%253C%252Fbutton%253E"
+                style="
+                  height: 242px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
 
-  <button class="btn btn-lg btn-success icon-rounded shadow">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-  <button class="btn btn-danger btn-lg shadow icon-rounded">
-    <i class="fas fa-trash-alt"></i>
-  </button>
+        <!-- Action Button -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Action</h3>
+            <h4 class="mb-3">Icon only</h4>
+            <p>
+              use <b>.shadow</b> & <b>.icon-rounded</b> class to make it an
+              action button
+            </p>
+          </div>
 
-  <!-- Action button with icon and text -->
-  <h6 class="size-5">Action button with icon and text</h6>
-  <p>add <b>shadow</b> & <b>rounded-full</b> class to make it action button</p>
+          <div class="mb-4">
+            <div
+              class="border rounded flex flex-wrap justify-content-evenly align-items-center p-2 mb-3"
+            >
+              <button class="btn btn-lg btn-success icon-rounded shadow">
+                <i class="fas fa-arrow-up"></i>
+              </button>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-lg%2520btn-success%2520icon-rounded%2520shadow%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-arrow-up%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
+                style="
+                  height: 242px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
 
-  <button class="btn btn-success shadow rounded-full">
-    <i class="fas fa-arrow-up mr-1"></i>
-    Go To Top
-  </button>
-</div>
+          <div class="mb-4">
+            <h4>Icon with text</h4>
+            <p>
+              use <b>shadow</b> & <b>rounded-full</b> class to make it action
+              button
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div
+              class="border rounded flex flex-wrap justify-content-evenly align-items-center p-2 mb-3"
+            >
+              <button class="btn btn-success shadow rounded-full">
+                <i class="fas fa-arrow-up mr-1"></i>
+                Go To Top
+              </button>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-success%2520shadow%2520rounded-full%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-arrow-up%2520mr-1%2522%253E%253C%252Fi%253E%250A%2520%2520Go%2520To%2520Top%250A%253C%252Fbutton%253E"
+                style="
+                  height: 260px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

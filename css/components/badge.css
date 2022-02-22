@@ -1,7 +1,9 @@
 .badge {
   font-size: 0.75em;
   background-color: var(--white);
+  color: var(--dark);
   padding: 0.35em 0.75em;
   border-radius: var(--rounded-full);
   box-shadow: var(--shadow);
+  display: inline-block;
 }

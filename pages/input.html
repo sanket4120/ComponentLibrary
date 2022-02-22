@@ -1,89 +1,363 @@
-<link rel="stylesheet" href="../css/main.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/site.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="border-bottom">
+      <nav class="navbar container">
+        <div class="navbar-brand">
+          <div class="nav-item">
+            <h3><a href="../index.html">Modulo</a></h3>
+          </div>
+        </div>
+        <ul>
+          <li class="navbar-item size-4">
+            <a
+              href="https://github.com/sanket4120/ComponentLibrary"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li
+            class="navbar-toggler navbar-item"
+            id="navbar-toggler"
+            data-toggle="#sidenav"
+          >
+            <i class="fa-solid fa-bars icon"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<form class="m-3">
-  <div class="mb-3">
-    <label for="name" class="label">Name</label>
-    <input type="text" class="input" id="name" placeholder="Text Input" />
-  </div>
+    <div class="grid gap-2">
+      <aside class="col col-md-3 col-lg-2" id="sidenav">
+        <ul class="list-unstyled p-3">
+          <li class="list-item">
+            <a href="./installation.html">Get Started</a>
+          </li>
+          <li class="list-item">
+            <a href="./alert.html">Alert</a>
+          </li>
+          <li class="list-item">
+            <a href="./avatar.html">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="./badge.html">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="./button.html">Button</a>
+          </li>
+          <li class="list-item">
+            <a href="./card.html">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="./grid.html">Grid</a>
+          </li>
+          <li class="list-item active">
+            <a href="./image.html">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="./input.html">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="./list.html">List</a>
+          </li>
+          <li class="list-item">
+            <a href="./modal.html">Modal</a>
+          </li>
+          <li class="list-item">
+            <a href="./navbar.html">Navigation</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Slider</a>
+          </li>
+          <li class="list-item">
+            <a href="./typography.html">Typography</a>
+          </li>
+        </ul>
+      </aside>
 
-  <div class="mb-3">
-    <label for="username" class="label">Username</label>
-    <div class="input-has-icon border-success">
-      <i class="far fa-user ml-2"></i>
-      <input
-        type="text"
-        class="input"
-        id="username"
-        placeholder="Input with icon"
-      />
+      <main class="col col-md-9 col-lg-10 p-3">
+        <div class="mb-4">
+          <h1 class="mb-3">Input</h1>
+          <p>Give custom styles for form controls.</p>
+        </div>
+
+        <section>
+          <div class="mb-4">
+            <p>
+              Style input with <b>.input</b> class & textarea with
+              <b>.textarea</b> class. Change <b>row</b> atrribute of textarea
+              according to your use case.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div class="border rounded flex flex-column p-2 mb-3">
+              <div class="mb-3">
+                <label for="name" class="label">Example Text Input</label>
+                <input
+                  type="text"
+                  class="input"
+                  id="name"
+                  placeholder="Text Input"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="label">Example Textarea</label>
+                <textarea id="message" rows="5" class="textarea"> </textarea>
+              </div>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522mb-3%2522%253E%250A%2520%2520%253Clabel%2520for%253D%2522name%2522%2520class%253D%2522label%2522%253EExample%2520Text%2520Input%253C%252Flabel%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520class%253D%2522input%2522%250A%2520%2520%2520%2520id%253D%2522name%2522%250A%2520%2520%2520%2520placeholder%253D%2522Text%2520Input%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522mb-3%2522%253E%250A%2520%2520%253Clabel%2520for%253D%2522message%2522%2520class%253D%2522label%2522%253EExample%2520Textarea%253C%252Flabel%253E%250A%2520%2520%253Ctextarea%2520id%253D%2522message%2522%2520rows%253D%25225%2522%2520class%253D%2522textarea%2522%253E%2520%253C%252Ftextarea%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 411px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sizing -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Sizing</h3>
+            <p>Use utility classes to change the size.</p>
+          </div>
+          <div class="mb-4">
+            <div class="border rounded flex flex-column p-2 mb-3">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="input size-4 fw-normal"
+                  id="name"
+                  placeholder="size-4"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="input size-5 fw-normal"
+                  id="name"
+                  placeholder="size-5"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="input size-6 fw-normal"
+                  id="name"
+                  placeholder="size-6"
+                />
+              </div>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522mb-3%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520class%253D%2522input%2520size-4%2520fw-normal%2522%250A%2520%2520%2520%2520id%253D%2522name%2522%250A%2520%2520%2520%2520placeholder%253D%2522size-4%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522mb-3%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520class%253D%2522input%2520size-5%2520fw-normal%2522%250A%2520%2520%2520%2520id%253D%2522name%2522%250A%2520%2520%2520%2520placeholder%253D%2522size-5%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522mb-3%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520class%253D%2522input%2520size-6%2520fw-normal%2522%250A%2520%2520%2520%2520id%253D%2522name%2522%250A%2520%2520%2520%2520placeholder%253D%2522size-6%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 616px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Icons -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Icons</h3>
+            <p>Add icons with <b>.input-has-icons</b> class</p>
+          </div>
+          <div class="mb-4">
+            <div class="border rounded flex flex-column p-2 mb-3">
+              <div class="mb-3">
+                <label for="username" class="label">Username</label>
+                <div class="input-has-icon">
+                  <i class="far fa-user ml-2"></i>
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Input with icon"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="username" class="label">Username</label>
+                <div class="input-has-icon">
+                  <input
+                    type="text"
+                    class="input"
+                    id="username"
+                    placeholder="Input with icon"
+                  />
+                  <i class="fas fa-check mr-2"></i>
+                </div>
+              </div>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522mb-3%2522%253E%250A%2520%2520%253Clabel%2520for%253D%2522username%2522%2520class%253D%2522label%2522%253EUsername%253C%252Flabel%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-has-icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-user%2520ml-2%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522input%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Input%2520with%2520icon%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522mb-3%2522%253E%250A%2520%2520%253Clabel%2520for%253D%2522username%2522%2520class%253D%2522label%2522%253EUsername%253C%252Flabel%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-has-icon%2522%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522input%2522%250A%2520%2520%2520%2520%2520%2520id%253D%2522username%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Input%2520with%2520icon%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check%2520mr-2%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 597px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Validation -->
+        <section>
+          <div class="mb-4">
+            <h3 class="size-3">Validation</h3>
+            <p>
+              Provide valuable, actionable feedback to your users with form
+              validation, via custom styles .
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div class="border rounded flex flex-column p-2 mb-3">
+              <div class="mb-3">
+                <label for="username" class="label">Username</label>
+                <div class="input-has-icon border-success">
+                  <input
+                    type="text"
+                    class="input"
+                    id="username"
+                    placeholder="Input with success message"
+                  />
+                  <i class="fas fa-check mr-2"></i>
+                </div>
+                <span class="message txt-success">Username is available</span>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="label">Email</label>
+                <input
+                  type="email"
+                  class="input border-danger"
+                  id="email"
+                  placeholder="Input with error message"
+                />
+                <span class="message txt-danger">Invalid Email</span>
+              </div>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522mb-3%2522%253E%250A%2520%2520%253Clabel%2520for%253D%2522username%2522%2520class%253D%2522label%2522%253EUsername%253C%252Flabel%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-has-icon%2520border-success%2522%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522input%2522%250A%2520%2520%2520%2520%2520%2520id%253D%2522username%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Input%2520with%2520success%2520message%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check%2520mr-2%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cspan%2520class%253D%2522message%2520txt-success%2522%253EUsername%2520is%2520available%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522mb-3%2522%253E%250A%2520%2520%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522label%2522%253EEmail%253C%252Flabel%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520%2520class%253D%2522input%2520border-danger%2522%250A%2520%2520%2520%2520id%253D%2522email%2522%250A%2520%2520%2520%2520placeholder%253D%2522Input%2520with%2520error%2520message%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522message%2520txt-danger%2522%253EInvalid%2520Email%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 616px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Select -->
+        <section>
+          <div class="mb-4">
+            <h3 class="size-3">Select</h3>
+            <p>
+              use <b>.input</b> class to style select menus. Custom styles are
+              limited to the select’s initial appearance and cannot modify the
+              option's.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div class="border rounded flex flex-column p-2 mb-3">
+              <div class="mb-3">
+                <label for="country" class="label">Select Country</label>
+                <select name="contry" id="country" class="input">
+                  <option value="india">India</option>
+                  <option value="japan">Japan</option>
+                  <option value="brazil">Brazil</option>
+                </select>
+              </div>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522mb-3%2522%253E%250A%2520%2520%253Clabel%2520for%253D%2522country%2522%2520class%253D%2522label%2522%253ESelect%2520Country%253C%252Flabel%253E%250A%2520%2520%253Cselect%2520name%253D%2522contry%2522%2520id%253D%2522country%2522%2520class%253D%2522input%2522%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%2522india%2522%253EIndia%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%2522japan%2522%253EJapan%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%2522brazil%2522%253EBrazil%253C%252Foption%253E%250A%2520%2520%253C%252Fselect%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 318px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- File Upload -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">File Upload</h3>
+            <p>
+              Place elements with <b>file</b> & <b>file-name</b> class inside
+              <b>file-upload</b> class
+            </p>
+            <p>It is required to apply <b>file</b> class only on label</p>
+          </div>
+          <div class="mb-4">
+            <div class="border rounded flex flex-column p-2 mb-3">
+              <div class="mb-3">
+                <input type="file" id="file" class="hide" />
+
+                <div class="file-upload">
+                  <label for="file" class="file"> Choose File </label>
+                  <span class="file-name">Profile.png</span>
+                </div>
+              </div>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522mb-3%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522file%2522%2520id%253D%2522file%2522%2520class%253D%2522hide%2522%2520%252F%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522file-upload%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522file%2522%2520class%253D%2522file%2522%253E%2520Choose%2520File%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522file-name%2522%253EProfile.png%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  height: 318px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-  </div>
 
-  <div class="mb-3">
-    <label for="username" class="label">Username</label>
-    <div class="input-has-icon border-success">
-      <input
-        type="text"
-        class="input"
-        id="username"
-        placeholder="Input with success message"
-      />
-      <i class="fas fa-check mr-2"></i>
-    </div>
-    <span class="message txt-success">Username is available</span>
-  </div>
-
-  <div class="mb-3">
-    <label for="email" class="label">Email</label>
-    <input
-      type="email"
-      class="input border-danger"
-      id="email"
-      placeholder="Input with error message"
-    />
-    <span class="message txt-danger">Invalid Email</span>
-  </div>
-
-  <div class="mb-3">
-    <label for="message" class="label">message</label>
-    <textarea id="message" rows="5" class="textarea">
-    Hello Everyone
-    </textarea>
-  </div>
-
-  <div class="mb-3">
-    <label class="label block">Radio Button</label>
-    <input type="radio" name="choice" id="choice1" value="one" />
-    <label for="choice1" class="label">One</label>
-    <input type="radio" name="choice" id="choice2" value="two" />
-    <label for="choice2" class="label">Two</label>
-  </div>
-
-  <div class="mb-3">
-    <label for="file" class="label">Upload Profile Photo</label>
-    <input type="file" id="file" class="hide" />
-
-    <div class="file-upload">
-      <label for="file" class="file"> Choose File </label>
-      <span class="file-name">Profile.png</span>
-    </div>
-  </div>
-
-  <div class="mb-3">
-    <input type="checkbox" id="agree" />
-    <label for="agree" class="label ml-2">I agree</label>
-  </div>
-
-  <div class="mb-3">
-    <label for="country" class="label">Select Country</label>
-    <select name="contry" id="country" class="input">
-      <option value="india">India</option>
-      <option value="america">America</option>
-      <option value="africa">Africa</option>
-    </select>
-  </div>
-
-  <div class="mb-3 txt-center">
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </div>
-</form>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

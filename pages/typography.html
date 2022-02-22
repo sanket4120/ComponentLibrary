@@ -1,57 +1,298 @@
-<link rel="stylesheet" href="../css/main.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/site.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="border-bottom">
+      <nav class="navbar container">
+        <div class="navbar-brand">
+          <div class="nav-item">
+            <h3><a href="../index.html">Modulo</a></h3>
+          </div>
+        </div>
+        <ul>
+          <li class="navbar-item size-4">
+            <a
+              href="https://github.com/sanket4120/ComponentLibrary"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li
+            class="navbar-toggler navbar-item"
+            id="navbar-toggler"
+            data-toggle="#sidenav"
+          >
+            <i class="fa-solid fa-bars icon"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
+    <div class="grid gap-2">
+      <aside class="col col-md-3 col-lg-2" id="sidenav">
+        <ul class="list-unstyled p-3">
+          <li class="list-item">
+            <a href="./installation.html">Get Started</a>
+          </li>
+          <li class="list-item">
+            <a href="./alert.html">Alert</a>
+          </li>
+          <li class="list-item">
+            <a href="./avatar.html">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="./badge.html">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="./button.html">Button</a>
+          </li>
+          <li class="list-item">
+            <a href="./card.html">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="./grid.html">Grid</a>
+          </li>
+          <li class="list-item">
+            <a href="./image.html">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="./input.html">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="./list.html">List</a>
+          </li>
+          <li class="list-item">
+            <a href="./modal.html">Modal</a>
+          </li>
+          <li class="list-item">
+            <a href="./navbar.html">Navigation</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Slider</a>
+          </li>
+          <li class="list-item active">
+            <a href="./typography.html">Typography</a>
+          </li>
+        </ul>
+      </aside>
 
-<p class="size-1">Size 1</p>
-<p class="size-2">Size 2</p>
-<p class="size-3">Size 3</p>
-<p class="size-4">Size 4</p>
-<p class="size-5">Size 5</p>
-<p class="size-6">Size 6</p>
-<p class="size-7">Size 7</p>
+      <main class="col col-md-9 col-lg-10 p-3">
+        <div class="mb-4">
+          <h1 class="mb-3">Typography</h1>
+          <p>Documentation and examples for typography.</p>
+        </div>
 
-<div class="m-3">
-  <p class="txt-center">Centered text</p>
-  <p class="txt-start">Left aligned text</p>
-  <p class="txt-end">Right aligned text</p>
-  <p class="txt-justified">
-    <b>JUSTIFIED TEXT</b>, amet consectetur adipisicing elit. Fuga, vel quos
-    amet sapiente beatae repellat animi aut praesentium esse enim quia deleniti
-    dolorem eum similique atque. Cumque asperiores facilis accusantium quis
-    temporibus quidem vitae, obcaecati quaerat soluta laudantium officiis iusto
-    nemo tenetur maxime corrupti repudiandae ullam sint eaque a possimus.
-  </p>
-</div>
+        <!-- Headings -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Headings</h3>
+            <p>
+              All HTML headings, <b>h1</b> through <b>h6</b>, are available.
+            </p>
+          </div>
+          <div class="mb-4">
+            <div class="border rounded p-2 mb-3 txt-center">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=615&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253EHeading%25201%253C%252Fh1%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Ch2%253EHeading%25202%253C%252Fh2%253E%250A%253Ch3%253EHeading%25203%253C%252Fh3%253E%250A%253Ch4%253EHeading%25204%253C%252Fh4%253E%250A%253Ch5%253EHeading%25205%253C%252Fh5%253E%250A%253Ch6%253EHeading%25206%253C%252Fh6%253E"
+                style="
+                  height: 281px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
 
-<div class="m-3">
-  <p class="txt-underline">Text with underline</p>
-  <p class="txt-deleted">Deleted Text</p>
-  <p class="txt-uppercase">uppercase text</p>
-  <p class="txt-lowercase">LOWERCASE TEXT</p>
-  <p class="txt-capitalize">capitalized text</p>
-</div>
+        <!-- Display headings -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Display headings</h3>
+            <p>
+              When you need a heading to stand out, consider using a display
+              heading.
+            </p>
+          </div>
+          <div class="mb-4">
+            <div class="border rounded p-2 mb-3 txt-center">
+              <p class="size-1">Size 1</p>
+              <p class="size-2">Size 2</p>
+              <p class="size-3">Size 3</p>
+              <p class="size-4">Size 4</p>
+              <p class="size-5">Size 5</p>
+              <p class="size-6">Size 6</p>
+              <p class="size-7">Size 7</p>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=615&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522size-1%2522%253ESize%25201%253C%252Fp%253E%2509%2509%2509%2509%250A%253Cp%2520class%253D%2522size-2%2522%253ESize%25202%253C%252Fp%253E%250A%253Cp%2520class%253D%2522size-3%2522%253ESize%25203%253C%252Fp%253E%250A%253Cp%2520class%253D%2522size-4%2522%253ESize%25204%253C%252Fp%253E%250A%253Cp%2520class%253D%2522size-5%2522%253ESize%25205%253C%252Fp%253E%250A%253Cp%2520class%253D%2522size-6%2522%253ESize%25206%253C%252Fp%253E%250A%253Cp%2520class%253D%2522size-7%2522%253ESize%25207%253C%252Fp%253E"
+                style="
+                  height: 299px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
 
-<div class="m-3">
-  <p class="fw-light">Light Text</p>
-  <p class="fw-normal">Normal Text</p>
-  <p class="fw-medium">Medium Text</p>
-  <p class="fw-semibold">Semibold Text</p>
-  <p class="fw-bold">Bold Text</p>
-</div>
+        <!-- Font Weight -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Font Weight</h3>
+            <p>
+              Change font weight with <b>.font-font_weight</b> (e.g.,
+              .font-light)
+            </p>
+          </div>
 
-<div class="m-3">
-  <p class="txt-primary">primary text</p>
-  <p class="txt-secondary">secondary text</p>
-  <p class="txt-success">success text</p>
-  <p class="txt-danger">danger text</p>
-  <p class="txt-warning">warning text</p>
-  <p class="txt-info">info text</p>
-  <p class="txt-light">light text</p>
-  <p class="txt-dark">dark text</p>
-  <p class="txt-white bg-dark">white text</p>
-</div>
+          <div class="mb-4">
+            <div class="border rounded p-2 mb-3 txt-center">
+              <p class="fw-light">Light Text</p>
+              <p class="fw-normal">Normal Text</p>
+              <p class="fw-medium">Medium Text</p>
+              <p class="fw-semibold">Semibold Text</p>
+              <p class="fw-bold">Bold Text</p>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=615&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522fw-light%2522%253ELight%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522fw-normal%2522%253ENormal%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522fw-medium%2522%253EMedium%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522fw-semibold%2522%253ESemibold%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522fw-bold%2522%253EBold%2520Text%253C%252Fp%253E"
+              style="
+                height: 262px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <!-- Text Alignment -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Text Alignment</h3>
+            <p>Change text alignment to center, start, end or justified</p>
+          </div>
+          <div class="mb-4">
+            <div class="border rounded p-2 mb-3">
+              <p class="txt-center">Centered text</p>
+              <p class="txt-start">Left aligned text</p>
+              <p class="txt-end">Right aligned text</p>
+              <p class="txt-justified">
+                <b>JUSTIFIED TEXT</b>, amet consectetur adipisicing elit. Fuga,
+                vel quos amet sapiente beatae repellat animi aut praesentium
+                esse enim quia deleniti dolorem eum similique atque.
+              </p>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=615&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522txt-center%2522%253ECentered%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-start%2522%253ELeft%2520aligned%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-end%2522%253ERight%2520aligned%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-justified%2522%253E%250A%253Cb%253EJUSTIFIED%2520TEXT%253C%252Fb%253E%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Fuga%252C%250Avel%2520quos%2520amet%2520sapiente%2520beatae%2520repellat%2520animi%2520aut%2520praesentium%250Aesse%2520enim%2520quia%2520deleniti%2520dolorem%2520eum%2520similique%2520atque.%250A%253C%252Fp%253E"
+                style="
+                  height: 318px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Inline text styles -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Text decoration & transform</h3>
+          </div>
+          <div class="mb-4">
+            <div class="border rounded p-2 mb-3 txt-center">
+              <p class="txt-underline">Text with underline</p>
+              <p class="txt-deleted">Deleted Text</p>
+              <p class="txt-uppercase">uppercase text</p>
+              <p class="txt-lowercase">LOWERCASE TEXT</p>
+              <p class="txt-capitalize">capitalized text</p>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=615&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cp%2520class%253D%2522txt-underline%2522%253EText%2520with%2520underline%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-deleted%2522%253EDeleted%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-uppercase%2522%253Euppercase%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-lowercase%2522%253ELOWERCASE%2520TEXT%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-capitalize%2522%253Ecapitalized%2520text%253C%252Fp%253E"
+                style="
+                  height: 262px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Colors -->
+        <section>
+          <div class="mb-4">
+            <h3 class="mb-3">Colors</h3>
+            <p>
+              Apply color to the text with <b>.txt-color_name</b> (e.g.,
+              .txt-primary)
+            </p>
+          </div>
+          <div class="mb-4">
+            <div class="border rounded p-2 mb-3 txt-center">
+              <p class="txt-primary">primary text</p>
+              <p class="txt-secondary">secondary text</p>
+              <p class="txt-success">success text</p>
+              <p class="txt-danger">danger text</p>
+              <p class="txt-warning">warning text</p>
+              <p class="txt-info">info text</p>
+              <p class="txt-light">light text</p>
+              <p class="txt-dark">dark text</p>
+              <p class="txt-white bg-dark">white text</p>
+            </div>
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=615&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522txt-primary%2522%253Eprimary%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-secondary%2522%253Esecondary%2520text%253C%252Fp%253E%2509%2509%2509%2509%250A%253Cp%2520class%253D%2522txt-success%2522%253Esuccess%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-danger%2522%253Edanger%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-warning%2522%253Ewarning%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-info%2522%253Einfo%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-light%2522%253Elight%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-dark%2522%253Edark%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-white%2520bg-dark%2522%253Ewhite%2520text%253C%252Fp%253E"
+                style="
+                  height: 336px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

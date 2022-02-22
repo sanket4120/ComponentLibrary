@@ -2,7 +2,6 @@
   box-shadow: var(--shadow);
   background-color: var(--white);
   border-radius: var(--rounded);
-  max-width: 20rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -41,9 +40,14 @@
   color: var(--secondary);
 }
 
-.card .card-badge {
+.card .card-badge-top-end {
   position: absolute;
   right: 10px;
+  top: 10px;
+}
+.card .card-badge-top-start {
+  position: absolute;
+  left: 10px;
   top: 10px;
 }
 
