@@ -9,7 +9,7 @@
 .textarea {
   width: 100%;
   border-radius: var(--rounded);
-  border: 1px var(--light) solid;
+  border: 1px var(--secondary) solid;
   outline: none;
   padding: 0.3em 0.5em;
   font-size: inherit;
@@ -23,7 +23,7 @@
 .input-has-icon {
   display: flex;
   align-items: center;
-  border: 1px var(--light) solid;
+  border: 1px var(--secondary) solid;
   border-radius: var(--rounded);
 }
 
@@ -39,7 +39,7 @@
 
 .file-upload {
   display: flex;
-  border: 1px var(--light) solid;
+  border: 1px var(--secondary) solid;
   width: 100%;
   border-radius: var(--rounded);
 }
