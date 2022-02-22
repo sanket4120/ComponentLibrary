@@ -7,21 +7,30 @@ aside {
   top: 0;
   height: 100vh;
   overflow-y: auto;
+  background-color: var(--light);
+}
+
+aside .list-item {
+  margin: 3px 0;
+}
+
+aside .list-item:hover,
+aside .list-item.active {
+  background-color: var(--white);
+}
+
+aside .list-item.active {
+  border-left: 2px var(--primary) solid;
+}
+
+.list-item a {
+  width: 100%;
 }
 
 .code-container,
 .code-container iframe {
   width: 100%;
   height: 100%;
-}
-
-aside .list-item:hover {
-  background-color: var(--light-blue);
-  border-radius: var(--rounded);
-}
-
-.list-item a {
-  width: 100%;
 }
 
 .translate-x-0 {
@@ -33,9 +42,7 @@ aside .list-item:hover {
     position: fixed;
     width: 13rem;
     transform: translateX(-13rem);
-    background-color: var(--white);
     z-index: 1;
-    border: none;
     box-shadow: var(--shadow);
     transition: all 0.3s linear;
   }
