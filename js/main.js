@@ -1,10 +1,12 @@
 // Handle navbar toggle
-const navbarToggler = document.querySelector('#navbar-toggler');
-if (navbarToggler) {
-  navbarToggler.addEventListener('click', () => {
-    const targetSidebarId = navbarToggler.dataset.toggle;
-    const navbarMenu = document.querySelector(targetSidebarId);
-    navbarMenu.classList.toggle('translate-x-0');
+const navbarTogglers = document.querySelectorAll('#navbar-toggler');
+if (navbarTogglers) {
+  navbarTogglers.forEach((navbarToggler) => {
+    navbarToggler.addEventListener('click', () => {
+      const targetSidebarId = navbarToggler.dataset.toggle;
+      const navbarMenu = document.querySelector(targetSidebarId);
+      navbarMenu.classList.toggle('translate-x-0');
+    });
   });
 }
 
