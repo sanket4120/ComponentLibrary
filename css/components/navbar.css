@@ -27,10 +27,6 @@ header {
   z-index: 1;
 }
 
-.translate-x-0 {
-  transform: translateX(0px);
-}
-
 .navbar-item {
   display: inline-block;
   padding: 0.5em;
