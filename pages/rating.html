@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/modulo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/site.css" />
+    <title>Modulo | Modal</title>
+  </head>
+  <body>
+    <header class="border-bottom">
+      <nav class="navbar container">
+        <div class="navbar-brand">
+          <div class="nav-item">
+            <h3><a href="../index.html">Modulo</a></h3>
+          </div>
+        </div>
+        <ul>
+          <li class="navbar-item size-4">
+            <a
+              href="https://github.com/sanket4120/ComponentLibrary"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li
+            class="navbar-toggler navbar-item"
+            id="navbar-toggler"
+            data-toggle="#sidenav"
+          >
+            <i class="fa-solid fa-bars icon"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="grid gap-2">
+      <aside class="col col-md-3 col-lg-2" id="sidenav">
+        <ul class="list-unstyled p-3">
+          <li class="list-item">
+            <a href="./installation.html">Get Started</a>
+          </li>
+          <li class="list-item">
+            <a href="./alert.html">Alert</a>
+          </li>
+          <li class="list-item">
+            <a href="./avatar.html">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="./badge.html">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="./button.html">Button</a>
+          </li>
+          <li class="list-item">
+            <a href="./card.html">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="./grid.html">Grid</a>
+          </li>
+          <li class="list-item">
+            <a href="./image.html">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="./input.html">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="./list.html">List</a>
+          </li>
+          <li class="list-item">
+            <a href="./modal.html">Modal</a>
+          </li>
+          <li class="list-item">
+            <a href="./navbar.html">Navigation</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Slider</a>
+          </li>
+          <li class="list-item">
+            <a href="./typography.html">Typography</a>
+          </li>
+          <li class="list-item active">
+            <a href="./rating.html">Rating</a>
+          </li>
+          <li class="list-item">
+            <a href="./toast.html">Toast</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="col col-md-9 col-lg-10 p-3">
+        <div class="mb-4">
+          <h1 class="mb-3">Rating</h1>
+          <p>
+            Ratings provide insight regarding others' opinions and experiences,
+            and can allow the user to submit a rating of their own.
+          </p>
+        </div>
+
+        <section>
+          <div class="mb-4">
+            <p>
+              For larger or smaller ratings use the utility classes (e.g.
+              size-1). To use a star rating component, copy the code below.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div class="border rounded p-2 mb-3 flex justify-content-center">
+              <section class="rate size-4">
+                <input type="radio" id="rating5" name="rating" value="5" />
+                <label for="rating5" title="5 stars">
+                  <i class="fa-solid fa-star"></i>
+                </label>
+
+                <input type="radio" id="rating4" name="rating" value="4" />
+                <label for="rating4" title="4 stars">
+                  <i class="fa-solid fa-star"></i>
+                </label>
+
+                <input type="radio" id="rating3" name="rating" value="3" />
+                <label for="rating3" title="3 stars">
+                  <i class="fa-solid fa-star"></i>
+                </label>
+
+                <input type="radio" id="rating2" name="rating" value="2" />
+                <label for="rating2" title="2 stars">
+                  <i class="fa-solid fa-star"></i>
+                </label>
+
+                <input type="radio" id="rating1" name="rating" value="1" />
+                <label for="rating1" title="1 star">
+                  <i class="fa-solid fa-star"></i>
+                </label>
+              </section>
+            </div>
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Csection%2520class%253D%2522rate%2520size-4%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522rating5%2522%2520name%253D%2522rating%2522%2520value%253D%25225%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522rating5%2522%2520title%253D%25225%2520stars%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Flabel%253E%250A%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522rating4%2522%2520name%253D%2522rating%2522%2520value%253D%25224%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522rating4%2522%2520title%253D%25224%2520stars%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Flabel%253E%250A%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522rating3%2522%2520name%253D%2522rating%2522%2520value%253D%25223%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522rating3%2522%2520title%253D%25223%2520stars%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Flabel%253E%250A%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522rating2%2522%2520name%253D%2522rating%2522%2520value%253D%25222%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522rating2%2522%2520title%253D%25222%2520stars%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Flabel%253E%250A%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522rating1%2522%2520name%253D%2522rating%2522%2520value%253D%25221%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522rating1%2522%2520title%253D%25221%2520star%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Flabel%253E%250A%253C%252Fsection%253E"
+                style="
+                  height: 653px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
