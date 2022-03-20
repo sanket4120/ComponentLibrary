@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="../images/modulo.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/site.css" />
-    <title>Modulo | Installation</title>
+    <title>Modulo | Toast</title>
   </head>
   <body>
     <header class="border-bottom">
@@ -40,7 +40,7 @@
     <div class="grid gap-2">
       <aside class="col col-md-3 col-lg-2" id="sidenav">
         <ul class="list-unstyled p-3">
-          <li class="list-item active">
+          <li class="list-item">
             <a href="./installation.html">Get Started</a>
           </li>
           <li class="list-item">
@@ -85,7 +85,7 @@
           <li class="list-item">
             <a href="./rating.html">Rating</a>
           </li>
-          <li class="list-item">
+          <li class="list-item active">
             <a href="./toast.html">Toast</a>
           </li>
         </ul>
@@ -93,24 +93,36 @@
 
       <main class="col col-md-9 col-lg-10 p-3">
         <div class="mb-4">
-          <h1 class="mb-3">Installation</h1>
+          <h1 class="mb-3">Toast</h1>
+          <p>
+            Toast provide brief notifications. The component is also known as a
+            snackbar. It contains a single line of text directly related to the
+            operation performed.
+          </p>
         </div>
 
-        <!-- CSS -->
         <section>
           <div class="mb-4">
-            <h3 class="mb-3">CSS</h3>
+            <h3 class="mb-3">Basic</h3>
             <p>
-              To get started Include below provided css link in head section of
-              your HTML before all other stylesheets.
+              Use <b>.toast</b> & <b>.toast-close</b> class to apply basic toast
+              styles
             </p>
           </div>
+
           <div class="mb-4">
+            <div class="border rounded p-2 mb-3 flex justify-content-center">
+              <div class="toast">
+                A simple toast - check it out!
+                <i class="fas fa-times toast-close"></i>
+              </div>
+            </div>
+
             <div class="code-container">
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmodulo.netlify.app%252Fcss%252Fmain.css%2522%253E"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2522%253E%250A%2520%2520A%2520simple%2520toast%2520-%2520check%2520it%2520out%21%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520toast-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
                 style="
-                  height: 188px;
+                  height: 243px;
                   border: 0;
                   transform: scale(1);
                   overflow: hidden;
@@ -120,46 +132,43 @@
               </iframe>
             </div>
           </div>
-        </section>
 
-        <!-- JS -->
-        <section>
           <div class="mb-4">
-            <h3 class="mb-3">JS</h3>
-            <p>
-              Some of the components require the use of JavaScript to function.
-              Place below provided script near the end of your pages, right
-              before the closing body tag, to enable it.
-            </p>
-          </div>
-          <div class="mb-4">
-            <div class="code-container">
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cscript%2520src%253D%2522https%253A%252F%252Fmodulo.netlify.app%252Fjs%252Fmain.js%2522%253E%253C%252Fscript%253E"
-                style="
-                  height: 188px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+            <div class="mb-4">
+              <h3 class="mb-3">Color Schemes</h3>
+              <p>
+                For different types of toast use <b>.toast-success</b>,
+                <b>.toast-danger</b>, <b>.toast-warning</b>, or
+                <b>.toast-info</b>. Use utility classes to change the position.
+              </p>
             </div>
-          </div>
-        </section>
 
-        <!-- Starter Template -->
-        <section>
-          <div class="mb-4">
-            <h3 class="mb-3">Starter template</h3>
-          </div>
-          <div class="mb-4">
+            <div
+              class="border rounded p-2 mb-3 flex flex-column align-items-center"
+            >
+              <div class="toast toast-success">
+                Success toast - check it out!
+                <i class="fas fa-times toast-close"></i>
+              </div>
+              <div class="toast toast-danger">
+                Error toast - check it out!
+                <i class="fas fa-times toast-close"></i>
+              </div>
+              <div class="toast toast-warning">
+                Warning toast - check it out!
+                <i class="fas fa-times toast-close"></i>
+              </div>
+              <div class="toast toast-info">
+                Info toast - check it out!
+                <i class="fas fa-times toast-close"></i>
+              </div>
+            </div>
+
             <div class="code-container">
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21doctype%2520html%253E%250A%253Chtml%2520lang%253D%2522en%2522%253E%250A%2520%2520%253Chead%253E%250A%2520%2520%2520%2520%253C%21--%2520Required%2520meta%2520tags%2520--%253E%250A%2520%2520%2520%2520%253Cmeta%2520charset%253D%2522utf-8%2522%253E%250A%2520%2520%2520%2520%253Cmeta%2520name%253D%2522viewport%2522%2520content%253D%2522width%253Ddevice-width%252C%2520initial-scale%253D1%2522%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520CSS%2520--%253E%250A%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmodulo.netlify.app%252Fcss%252Fmain.css%2522%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Ctitle%253EHello%252C%2520world%21%253C%252Ftitle%253E%250A%2520%2520%253C%252Fhead%253E%250A%2520%2520%253Cbody%253E%250A%2520%2520%2520%2520%253Ch1%253EHello%252C%2520world%21%253C%252Fh1%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520JavaScript%2520--%253E%250A%2520%2520%2520%253Cscript%2520src%253D%2522https%253A%252F%252Fmodulo.netlify.app%252Fjs%252Fmain.js%2522%253E%253C%252Fscript%253E%250A%2520%2520%2520%250A%2520%2520%253C%252Fbody%253E%250A%253C%252Fhtml%253E"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520toast-success%2522%253E%250A%2520%2520Success%2520toast%2520-%2520check%2520it%2520out%21%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520toast-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast%2520toast-danger%2522%253E%250A%2520%2520Error%2520toast%2520-%2520check%2520it%2520out%21%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520toast-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast%2520toast-warning%2522%253E%250A%2520%2520Warning%2520toast%2520-%2520check%2520it%2520out%21%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520toast-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast%2520toast-info%2522%253E%250A%2520%2520Info%2520toast%2520-%2520check%2520it%2520out%21%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520toast-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
                 style="
-                  height: 541px;
+                  height: 467px;
                   border: 0;
                   transform: scale(1);
                   overflow: hidden;

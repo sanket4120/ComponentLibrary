@@ -1,0 +1,29 @@
+:root {
+  --dark-yellow: #ffd32d;
+}
+
+.rate {
+  display: inline-block;
+}
+
+.rate > input {
+  display: none;
+}
+
+.rate > label {
+  float: right;
+}
+
+.rate > label {
+  display: inline-block;
+  font-size: 1em;
+  padding: 0.3em 0.2em;
+  margin: 0;
+  cursor: pointer;
+}
+
+.rate input:checked ~ label,
+.rate label:hover,
+.rate label:hover ~ label {
+  color: var(--dark-yellow);
+}
