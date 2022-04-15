@@ -8,14 +8,14 @@
   border-radius: var(--rounded);
   margin: 1em;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  text-align: justify;
 }
 
 .alert-close {
   font-size: 1.2em;
   margin-left: 1.5em;
+  margin-top: 4px;
 }
 
 .alert-primary {

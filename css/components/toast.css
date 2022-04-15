@@ -5,16 +5,16 @@
   box-shadow: var(--shadow);
   border-radius: var(--rounded);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   max-width: 25rem;
-  display: inline-block;
   margin: 0.5em;
 }
 
 .toast-close {
   font-size: 1.2em;
   margin-left: 1.5em;
+  margin-top: 4px;
 }
 
 .toast.toast-success {
